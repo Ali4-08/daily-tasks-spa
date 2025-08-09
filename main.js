@@ -94,7 +94,7 @@ function setupTaskPage() {
 
             card.innerHTML = `
             <div>
-                <h3 class="text-lg font-bold ${task.state ? "text-gray-400 line-through" : ""}">${task.title}</h3>
+                <h3 class="text-lg font-bold text-black ${task.state ? "text-gray-400 line-through" : ""}">${task.title}</h3>
                 <p class="font-semibold text-gray-600">${task.description}</p>
             </div>
 
@@ -202,7 +202,32 @@ function renderPage() {
     }
 }
 
+document.addEventListener("click", (e) => {
+    if (e.target.id === "themeToggle") {
+        document.documentElement.classList.toggle("dark");
+        localStorage.setItem("theme", document.documentElement.classList.contains("dark") ? "dark" : "light");
 
-window.addEventListener("DOMContentLoaded", renderPage);
+        if (e.target.textContent === "🌙") {
+            e.target.textContent = "☀️"
+        } else {
+            e.target.textContent = "🌙"
+        }
+    }
+});
+
+function setTheme() {
+    const theme = localStorage.getItem("theme");
+    if (theme === "dark") {
+        document.documentElement.classList.add("dark");
+        document.getElementById("themeToggle").textContent = "☀️";
+    }
+}
+
+
+window.addEventListener("DOMContentLoaded", () => {
+    renderPage();
+    setTheme();
+});
+
 window.addEventListener("hashchange", renderPage);
 
