@@ -1,7 +1,7 @@
 export default function renderNavbar() {
     return `
         <nav class="bg-white flex justify-between items-center shadow-md p-4 dark:bg-gray-800">
-            <div class="text-xl font-bold">Task Manager</div>
+            <div class="text-xl font-bold">Task Manager <span class="text-sm text-gray-400">V1.1</span></div>
             <div><bytton id="themeToggle" class="text-xl cursor-pointer">🌙</button></div>
             <ul class="flex flex-row-reverse font-semibold gap-4">
                 <li><a href="#/" class="inline-block transform hover:scale-105 transition">خانه</a></li>
