@@ -4,10 +4,11 @@ export default function renderNavbar() {
             <div class="text-xl font-bold">Task Manager</div>
             <div><bytton id="themeToggle" class="text-xl cursor-pointer">🌙</button></div>
             <ul class="flex flex-row-reverse font-semibold gap-4">
-                <li><a href="#/" class="hover:underline">خانه</a></li>
-                <li><a href="#/tasks" class="hover:underline">تسک ها</a></li>
-                <li><a href="#/about" class="hover:underline">درباره ما</a></li>
-                <li><a href="#/contact" class="hover:underline">تماس با ما</a></li>
+                <li><a href="#/" class="inline-block transform hover:scale-105 transition">خانه</a></li>
+                <li><a href="#/tasks" class="inline-block transform hover:scale-105 transition">تسک ها</a></li>
+                <li><a href="#/services" class="inline-block transform hover:scale-105 transition">خدمات ما</a></li>
+                <li><a href="#/about" class="inline-block transform hover:scale-105 transition">درباره ما</a></li>
+                <li><a href="#/contact" class="inline-block transform hover:scale-105 transition">تماس با ما</a></li>
             </ul>
         </nav>
     `;

@@ -1,6 +1,7 @@
 import renderNavbar from "./source/components/Navbar.js";
 import renderHome from "./source/pages/Home.js";
 import renderTasks from "./source/pages/Tasks.js";
+import renderServices from "./source/pages/Services.js";
 import renderAbout from "./source/pages/About.js";
 import renderContact from "./source/pages/Contact.js";
 import { Storage } from "./source/utils/Storage.js";
@@ -181,6 +182,9 @@ function renderPage() {
             break;
         case "#/tasks":
             page = renderTasks();
+            break;
+        case "#/services":
+            page = renderServices();
             break;
         case "#/about":
             page = renderAbout();
