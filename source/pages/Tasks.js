@@ -22,10 +22,10 @@ export default function renderTasks() {
         <span id="taskCount" class="font-semibold">تعداد تسک ها: 0</span>
         
         <div class="space-y-4">
-          <button id="filterAll" class="px-3 py-1 bg-gray-300 rounded hover:bg-gray-400">همه</button>
-          <button id="filterDone" class="px-3 py-1 bg-green-300 rounded hover:bg-green-400">انجام‌شده</button>
-          <button id="filterPending" class="px-3 py-1 bg-yellow-300 rounded hover:bg-yellow-400">درحال انجام</button>
-          <button id="deleteAll" class="btn-delete">حذف همه</button>
+          <button id="filterAll" class="px-3 py-1 bg-gray-300 rounded hover:bg-gray-400 text-white dark:text-gray-800">همه</button>
+          <button id="filterDone" class="px-3 py-1 bg-green-300 rounded hover:bg-green-400 text-white dark:text-gray-800">انجام‌شده</button>
+          <button id="filterPending" class="px-3 py-1 bg-yellow-300 rounded hover:bg-yellow-400 text-white dark:text-gray-800">درحال انجام</button>
+          <button id="deleteAll" class="btn-delete text-white dark:text-gray-800">حذف همه</button>
         </div>
       </div>
       
