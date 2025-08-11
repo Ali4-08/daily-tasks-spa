@@ -217,6 +217,12 @@ document.addEventListener("click", (e) => {
             e.target.textContent = "🌙"
         }
     }
+    
+    // =================================================================
+
+    if(e.target.id === "btnMenu"){
+        document.getElementById("mobileMenu").classList.toggle("hidden");
+    }
 });
 
 function setTheme() {
