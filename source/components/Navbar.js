@@ -20,7 +20,7 @@ export default function renderNavbar() {
             </ul>
 
              <!--منو برای سایز موبایل-->
-            <ul id="mobileMenu" class="hidden md:hidden flex flex-col font-semibold text-center bg-white shadow-md gap-8 absolute top-16 left-0 w-full p-4">
+            <ul id="mobileMenu" class="hidden md:hidden flex-col font-semibold text-center bg-white shadow-md gap-8 absolute top-16 left-0 w-full p-4">
                 <li><a href="#/" class="block transform hover:scale-105 transition">خانه</a></li>
                 <li><a href="#/tasks" class="block transform hover:scale-105 transition">تسک ها</a></li>
                 <li><a href="#/services" class="block transform hover:scale-105 transition">خدمات ما</a></li>

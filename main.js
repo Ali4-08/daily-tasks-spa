@@ -222,6 +222,7 @@ document.addEventListener("click", (e) => {
 
     if(e.target.id === "btnMenu"){
         document.getElementById("mobileMenu").classList.toggle("hidden");
+        document.getElementById("mobileMenu").classList.toggle("flex");
     }
 });
 
