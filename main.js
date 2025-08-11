@@ -101,7 +101,7 @@ function setupTaskPage() {
                 </div>
 
                 <div class="flex-1">
-                     <label class="font-semibold">${task.state ? "انجام شده" : "انجام نشده"}</label>
+                    <label class="font-semibold text-black">${task.state ? "انجام شده" : "انجام نشده"}</label>
                     <input type="checkbox" class="chkStatus" ${task.state ? "checked" : ""}/>
                 </div>
 
