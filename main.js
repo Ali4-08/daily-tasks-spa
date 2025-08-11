@@ -91,22 +91,24 @@ function setupTaskPage() {
 
         filteredTasks.forEach(task => {
             const card = document.createElement("div");
-            card.classList.add("bg-white", "rounded", "shadow-md", "p-4", "space-y-3", "flex", "justify-between", "items-center");
+            card.classList.add("bg-white", "rounded", "shadow-md", "p-4", "space-y-3");
 
             card.innerHTML = `
-            <div>
-                <h3 class="text-lg font-bold text-black ${task.state ? "text-gray-400 line-through" : ""}">${task.title}</h3>
-                <p class="font-semibold text-gray-600">${task.description}</p>
-            </div>
+            <div class="flex items-center justify-between gap-2">
+                <div class="flex-1">
+                    <h3 class="text-lg font-bold text-black ${task.state ? "text-gray-400 line-through" : ""}">${task.title}</h3>
+                    <p class="font-semibold text-gray-600">${task.description}</p>
+                </div>
 
-            <div>
-                 <label class="font-semibold">${task.state ? "انجام شده" : "انجام نشده"}</label>
-                 <input type="checkbox" class="chkStatus" ${task.state ? "checked" : ""}/>
-            </div>
+                <div class="flex-1">
+                     <label class="font-semibold">${task.state ? "انجام شده" : "انجام نشده"}</label>
+                    <input type="checkbox" class="chkStatus" ${task.state ? "checked" : ""}/>
+                </div>
 
-            <div>
-                <button class="btn-delete" data-id="${task.id}">حذف</button>
-                <button class="btn-edit" data-id="${task.id}">ویرایش</button>
+                <div class="flex flex-col gap-2">
+                    <button class="btn-delete" data-id="${task.id}">حذف</button>
+                    <button class="btn-edit" data-id="${task.id}">ویرایش</button>
+                </div>
             </div>
         `;
 

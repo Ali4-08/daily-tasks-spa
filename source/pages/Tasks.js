@@ -13,15 +13,15 @@ export default function renderTasks() {
             <textarea id="description" rows="3" class="w-full p-2 border rounded-md" placeholder="توضیحی برای تسک بنویس" required></textarea>
         </div>
 
-         <button type="submit" id="btnSubmit" class="btn">
+         <button type="submit" id="btnSubmit" class="btn w-full sm:w-fit">
             افزودن تسک
          </button>
       </form>
 
-      <div class="flex items-center justify-between mb-4">
+      <div class="flex flex-col items-center justify-between mb-4 gap-4">
         <span id="taskCount" class="font-semibold">تعداد تسک ها: 0</span>
         
-        <div class="space-y-4">
+        <div class="flex flex-col sm:flex-row gap-2">
           <button id="filterAll" class="px-3 py-1 bg-gray-300 rounded hover:bg-gray-400 text-white dark:text-gray-800">همه</button>
           <button id="filterDone" class="px-3 py-1 bg-green-300 rounded hover:bg-green-400 text-white dark:text-gray-800">انجام‌شده</button>
           <button id="filterPending" class="px-3 py-1 bg-yellow-300 rounded hover:bg-yellow-400 text-white dark:text-gray-800">درحال انجام</button>
